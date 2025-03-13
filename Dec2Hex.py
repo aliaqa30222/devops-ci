@@ -24,7 +24,7 @@ def decimal_to_hex(decimal_value):
 
     except ValueError as e:
         print(f"Error: {e}")
-        return None
+        raise ValueError("Invalid input: Must be an integer.")  # ✅ Proper ValueError raise karo
 
 if __name__ == "__main__":
     if len(sys.argv) < 2:
