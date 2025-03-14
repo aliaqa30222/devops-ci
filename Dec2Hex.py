@@ -1,6 +1,9 @@
 import sys
 
 def decimal_to_hex(decimal_value):
+    if not isinstance(decimal_value, int):
+        raise ValueError("Input must be an integer.")
+
     hex_chars = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F']
     hexadecimal = ""
     num = decimal_value
