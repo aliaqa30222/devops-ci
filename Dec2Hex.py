@@ -13,11 +13,11 @@ def decimal_to_hex(decimal_value):
 
     # Handle the edge case for 0
     if num == 0:
-        print(f"Hexadecimal representation is: 0")
+        print("Hexadecimal representation is: 0")
         return "0"
 
     print(f"Converting the Decimal Value {num} to Hex...")
-
+# Loop to convert decimal to hexadecimal
     while num != 0:
         rem = num % 16
         hexadecimal = hex_chars[rem] + hexadecimal
@@ -35,4 +35,5 @@ if __name__ == "__main__":
             print("Please provide a valid integer.")
     else:
         print("Usage: python script.py <decimal_number>")
+
 
