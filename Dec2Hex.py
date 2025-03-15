@@ -17,7 +17,6 @@ def decimal_to_hex(decimal_value):
         return "0"
 
     print(f"Converting the Decimal Value {num} to Hex...")
-# Loop to convert decimal to hexadecimal
     while num != 0:
         rem = num % 16
         hexadecimal = hex_chars[rem] + hexadecimal
